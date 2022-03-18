@@ -1,11 +1,11 @@
 package Java;
 
-public class CuentaBancaria {
+public class BankAccount {
 
     private Integer accountNumber;
     protected Boolean activated;
 
-    public CuentaBancaria(Integer accountNumber, Boolean activated ){
+    public BankAccount(Integer accountNumber, Boolean activated ){
         this.accountNumber = accountNumber;
         this.activated = activated;
     }
@@ -28,7 +28,7 @@ public class CuentaBancaria {
 
     @Override
     public String toString() {
-        return "CuentaBancaria{" +
+        return "BankAccount{" +
                 "accountNumber=" + accountNumber +
                 ", activated=" + activated +
                 '}';

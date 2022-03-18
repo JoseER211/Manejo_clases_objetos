@@ -2,13 +2,13 @@ package Java;
 
 import java.util.ArrayList;
 
-public class Fruta {
+public class Fruit {
 
     public String name;
     private Float averageWeight;
     public ArrayList<String> colors = new ArrayList<String>();
 
-    public Fruta(String name, float averageWeight){
+    public Fruit(String name, float averageWeight){
         this.name = name;
         this.averageWeight = averageWeight;
 
@@ -40,7 +40,7 @@ public class Fruta {
 
     @Override
     public String toString() {
-        return "Fruta{" +
+        return "Fruit{" +
                 "name='" + name + '\'' +
                 ", averageWeight=" + averageWeight +
                 ", colors=" + colors +

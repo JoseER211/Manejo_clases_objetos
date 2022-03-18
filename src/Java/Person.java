@@ -4,7 +4,7 @@ import java.util.Date;
 /**
  *
  */
-public class Persona {
+public class Person {
 
     public String name;
     public String lastName1;
@@ -12,7 +12,7 @@ public class Persona {
     public Date dateBirth;
     public Float height;
 
-    public Persona(String name, String lastName1, String lastName2, Date dateBirth, float height) {
+    public Person(String name, String lastName1, String lastName2, Date dateBirth, float height) {
         this.name = name;
         this.lastName1 = lastName1;
         this.lastName2 = lastName2;
@@ -63,7 +63,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", lastName1='" + lastName1 + '\'' +
                 ", lastName2='" + lastName2 + '\'' +
