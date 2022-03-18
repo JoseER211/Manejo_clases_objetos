@@ -8,7 +8,7 @@ public class Fruit {
     private Float averageWeight;
     public ArrayList<String> colors = new ArrayList<String>();
 
-    public Fruit(String name, float averageWeight){
+    public Fruit(String name, float averageWeight) {
         this.name = name;
         this.averageWeight = averageWeight;
 

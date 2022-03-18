@@ -5,7 +5,7 @@ public class BankAccount {
     private Integer accountNumber;
     protected Boolean activated;
 
-    public BankAccount(Integer accountNumber, Boolean activated ){
+    public BankAccount(Integer accountNumber, Boolean activated) {
         this.accountNumber = accountNumber;
         this.activated = activated;
     }

@@ -17,11 +17,11 @@ public class Flower {
         this.numberPetals = numberPetals;
     }
 
-    public double increaseSize() {
+    protected Double increaseSize() {
 
-        Scanner dato = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
         System.out.println("Digite el tamaño a modificar");
-        Integer increaseSize = dato.nextInt();
+        Integer increaseSize = data.nextInt();
 
         this.size = this.size + increaseSize;
         return this.size;
@@ -80,7 +80,7 @@ public class Flower {
 
     public static void main(String[] args) {
 
-      Flower rosa = new Flower(1,"rosa","rojo",304.08, 5);
+        Flower rosa = new Flower(1, "rosa", "rojo", 304.08, 5);
         rosa.increaseSize();
         System.out.println(rosa.toString());
 
