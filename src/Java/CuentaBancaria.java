@@ -1,8 +1,9 @@
 package Java;
 
 public class CuentaBancaria {
+
     private Integer accountNumber;
-    private Boolean activated;
+    protected Boolean activated;
 
     public CuentaBancaria(Integer accountNumber, Boolean activated ){
         this.accountNumber = accountNumber;

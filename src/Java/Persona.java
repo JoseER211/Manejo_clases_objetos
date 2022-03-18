@@ -6,11 +6,11 @@ import java.util.Date;
  */
 public class Persona {
 
-    private String name;
-    private String lastName1;
-    private String lastName2;
-    private Date dateBirth;
-    private float height;
+    public String name;
+    public String lastName1;
+    public String lastName2;
+    public Date dateBirth;
+    public Float height;
 
     public Persona(String name, String lastName1, String lastName2, Date dateBirth, float height) {
         this.name = name;
@@ -53,11 +53,11 @@ public class Persona {
         this.dateBirth = dateBirth;
     }
 
-    public float getHeight() {
+    public Float getHeight() {
         return height;
     }
 
-    public void setHeight(float height) {
+    public void setHeight(Float height) {
         this.height = height;
     }
 

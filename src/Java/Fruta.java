@@ -3,9 +3,10 @@ package Java;
 import java.util.ArrayList;
 
 public class Fruta {
-    private String name;
+
+    public String name;
     private Float averageWeight;
-    private ArrayList<String> colors;
+    public ArrayList<String> colors = new ArrayList<String>();
 
     public Fruta(String name, float averageWeight){
         this.name = name;
