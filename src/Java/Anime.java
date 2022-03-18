@@ -1,11 +1,25 @@
 package Java;
 
+/**
+ * Representa características de un anime y su duración.
+ * @author Jose David Echavarria Ruiz
+ */
+
 public class Anime {
  protected String creator;
  private String name;
  public String gender;
  public Integer numberChapters;
  public Integer numberSeasons;
+
+    /**
+     * Crea una instancia de Anime
+     * @param creator propiedad de la clase
+     * @param name propiedad de la clase
+     * @param gender propiedad de la clase
+     * @param numberChapters propiedad de la clase
+     * @param numberSeasons propiedad de la clase
+     */
 
     public Anime(String creator, String name, String gender, Integer numberChapters, Integer numberSeasons) {
         this.creator = creator;
@@ -15,6 +29,9 @@ public class Anime {
         this.numberSeasons = numberSeasons;
     }
 
+    /**
+     * Manda un mensaje respecto a la duración del anime
+     */
     public void animeDuration(){
         if (numberChapters == 12 && numberSeasons == 1){
             System.out.println("Este anime lo terminas en un día!");
@@ -24,6 +41,9 @@ public class Anime {
         }
     }
 
+    /**
+     * getters y setters para acceder a las propiedades
+     */
     public String getCreator() {
         return creator;
     }
@@ -40,6 +60,11 @@ public class Anime {
         this.name = name;
     }
 
+    /**
+     * Muestra las propiedades de la clase Anime
+     * @return Los valores de las propiedades
+     */
+
     @Override
     public String toString() {
         return "Anime{" +
@@ -52,6 +77,9 @@ public class Anime {
     }
 
     public static void main(String[] args) {
+        /**
+         * Prueba del método animeDuration
+         */
         Anime akameGaKill = new Anime("Takahiro","Akame Ga Kill!","Acción",
                 12,1);
         System.out.println(akameGaKill.toString());

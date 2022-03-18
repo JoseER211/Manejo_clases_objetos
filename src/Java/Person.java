@@ -3,8 +3,10 @@ package Java;
 import java.util.Date;
 
 /**
- *
+ * Representa características de una persona.
+ * @author Jose David Echavarria Ruiz
  */
+
 public class Person {
 
     public String name;
@@ -13,6 +15,14 @@ public class Person {
     public Date dateBirth;
     public Float height;
 
+    /**
+     * Crea una instancia de Person
+     * @param name propiedad de la clase
+     * @param lastName1 propiedad de la clase
+     * @param lastName2 propiedad de la clase
+     * @param dateBirth propiedad de la clase
+     * @param height propiedad de la clase
+     */
     public Person(String name, String lastName1, String lastName2, Date dateBirth, float height) {
         this.name = name;
         this.lastName1 = lastName1;
@@ -22,6 +32,9 @@ public class Person {
 
     }
 
+    /**
+     * getters y setters para acceder a las propiedades
+     */
     public String getName() {
         return name;
     }
@@ -62,6 +75,10 @@ public class Person {
         this.height = height;
     }
 
+    /**
+     * Muestra las propiedades de la clase Person
+     * @return Los valores de las propiedades
+     */
     @Override
     public String toString() {
         return "Person{" +

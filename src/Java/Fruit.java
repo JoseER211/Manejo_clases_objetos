@@ -1,18 +1,35 @@
 package Java;
-
 import java.util.ArrayList;
+
+/**
+ * Representa características de una fruta.
+ * @author Jose David Echavarria Ruiz
+ */
 
 public class Fruit {
 
     public String name;
     private Float averageWeight;
-    public ArrayList<String> colors = new ArrayList<String>();
+    public ArrayList<String> colors;
+
+
+    /**
+     * Crea una instancia de fruit
+     * @param name propiedad de la clase
+     * @param averageWeight propiedad de la clase
+     */
 
     public Fruit(String name, float averageWeight) {
         this.name = name;
         this.averageWeight = averageWeight;
+        this.colors = new ArrayList<String>();
 
     }
+
+
+    /**
+     * getters y setters para acceder a las propiedades
+     */
 
     public String getName() {
         return name;
@@ -38,6 +55,10 @@ public class Fruit {
         this.colors = colors;
     }
 
+    /**
+     * Muestra las propiedades de la clase Fruit
+     * @return Los valores de las propiedades
+     */
     @Override
     public String toString() {
         return "Fruit{" +
